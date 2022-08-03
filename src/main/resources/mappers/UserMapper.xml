@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.springdemo.mapper.UserMapper">
+    <!--<resultMap id="user" type="com.example.springdemo.pojo.User">
+
+        <association property="department" resultMap="department" />
+    </resultMap>
+    <resultMap id="department" type="com.example.springdemo.pojo.Department">
+        <result column="name" property="department" />
+
+    </resultMap>-->
 
     <sql id="allCols">
         id,name,age,phoneNumber

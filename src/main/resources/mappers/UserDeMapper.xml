@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springdemo.mapper.UserDeMapper">
+
+
+
+
+    <select id="selectUserDepartment" resultType="com.example.springdemo.pojo.UserDepartmentVO">
+        select id,a.name username, age, phoneNumber, a.dep_id depId, b.name depName, work
+        from tb_user a
+                 left join tb_dep b
+                           on a.dep_id=b.dep_id;
+    </select>
+</mapper>
