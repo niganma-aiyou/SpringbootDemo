@@ -18,5 +18,11 @@ import java.util.List;
 
 @Mapper
 public interface UserDeMapper {
+
+
+    /**
+     * show 查询
+    * @return 返回值是list
+    * */
     List<UserDepartmentVO> selectUserDepartment();
 }
